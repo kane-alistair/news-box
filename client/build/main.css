@@ -1,0 +1,28 @@
+.hero {
+    width: 1280px;
+    height: 585px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 359px;
+    height: 228px;
+    border-radius: 0px;
+    overflow:auto;
+}
+
+.card-content {
+    width: 359px;
+    height: 111px;
+}
+
+.stacked-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1128px;
+    height: 2328px;
+}

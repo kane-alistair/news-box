@@ -1,28 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Robotico', sans-serif;
+    color: #351A40;
+}
+
 .hero {
-    width: 1280px;
-    height: 585px;
+    background: rgba(102, 112, 128, 0.1);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.card-img-container{
+    overflow: hidden;
+    width: 359px;
+    height: 215px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    width: 359px;
+    color: rgb(30, 0, 42);
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
 }
 
-.card-img {
-    width: 359px;
-    height: 228px;
+.img {
+    width: 100%;
     border-radius: 0px;
-    overflow:auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
 }
 
 .card-content {
     width: 359px;
-    height: 111px;
+    height: 72px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
 }
 
 .stacked-group {
+    margin: 10px 10px 0px 10px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 1128px;
-    height: 2328px;
+}
+
+.logo {
+    width: 253px;
+    height: 47px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    height: 96px;
+}
+
+.card-type {
+    margin-top: 15px;
+    font-family: 'Robotico', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 2em;
+}
+
+.card-type-read {
+    color: #BA1483;
+}
+
+.card-type-listen {
+    color: #DF5922;
+}
+
+.card-type-watch {
+    color: #9278A7;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    height: 4em;
+}
+
+.card-btn {
+    width: 111px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(30, 0, 42);
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 2.8em;
+    padding: 2px;
+    color: rgb(30, 0, 42);
+    text-align: center;
+    letter-spacing: -0.1px;
+    line-height: 14px;
 }

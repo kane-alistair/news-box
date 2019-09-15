@@ -1,20 +1,27 @@
 import ImagePlaceholder from '../../hero/imagePlaceholder';
+import CardHeader from './cardHeader';
+import CardDate from './cardDate';
+import CardContent from './cardContent';
+import CardBtn from './cardBtn';
+import CardType from './cardType';
 
-const Card = (imgSrc, content) => {
+const Card = (card) => {
   const div = document.createElement('div');
   div.classList.add('card');
 
-  const img = ImagePlaceholder(imgSrc, 'card');
-  img.classList.add('card-img');
+  const img = ImagePlaceholder(card.img.url, card.img.alt, 'card-img');
+  const cardHeader = CardHeader(card.header);
+  const cardType = CardType(card.type);
+  const cardContent = CardContent(card.content);
+  const cardDate = CardDate(card.date);
+  const moreInfoBtn = CardBtn('More Info');
 
-  const pContainer = document.createElement('div');
-  const contentP = document.createElement('p');
-  contentP.classList.add('card-content');
-  contentP.textContent = content;
-
-  pContainer.appendChild(contentP);
   div.appendChild(img);
-  div.appendChild(pContainer);
+  div.appendChild(cardType);
+  div.appendChild(cardHeader);
+  div.appendChild(cardDate);
+  div.appendChild(cardContent);
+  div.appendChild(moreInfoBtn);
   return div;
 };
 

@@ -14,12 +14,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^1.19.2",
-    "webpack": "^4.39.3"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^5.0.1"
   }
 }
